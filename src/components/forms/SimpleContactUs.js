@@ -56,7 +56,6 @@ function SimpleContactUs({roundedHeaderButton = false})  {
     const formData = new FormData(form);
 
 
-
     fetch('https://c1-europe.altogic.com/e:6418617af22caba24c54c0a2/landers', {
       method: form.method,
       body: formData})
@@ -106,7 +105,7 @@ function SimpleContactUs({roundedHeaderButton = false})  {
                   </InputContainer>
                   <InputContainer>
                     <Label htmlFor="phone-number-input">Your Phone Number</Label>
-                    <Input type="number" name="number"   placeholder="E.g. +91 90009 90009"/>
+                    <Input type="text" name="number"   placeholder="E.g. +91 90009 90009"/>
                   </InputContainer>
                   <InputContainer>
                     <Label htmlFor="location-input">Your Location</Label>
