@@ -18,66 +18,81 @@ import prototypeIllustrationImageSrc from "images/prototype-illustration.svg";
 import { ReactComponent as BriefcaseIcon } from "feather-icons/dist/icons/briefcase.svg";
 import { ReactComponent as MoneyIcon } from "feather-icons/dist/icons/dollar-sign.svg";
 import TwoColContactUsWithIllustrationFullForm from "components/forms/TwoColContactUsWithIllustrationFullForm";
+import shopIconImageSrc from "images/shop-icon.svg";
+import celebrationIconImageSrc from "images/celebration-icon.svg";
+import chefIconImageSrc from "images/chef-icon.svg";  
 
 export default () => {
   const Subheading = tw.span`uppercase tracking-widest font-bold text-primary-500`;
   const HighlightedText = tw.span`text-primary-500`;
 
-  
+  const defaultSteps = [
+    {
+      heading: "Signup",
+      description: "Create an account with us using your email ID."
+    },
+    {
+      heading: "Input Details",
+      description: "Input various details about your business."
+    },
+    {
+      heading: "Select Influencer Package",
+      description: "Choose a package that suits your needs."
+    },
+    {
+        heading: "Watch NIX make you go viral",
+        description: "Once you have selected a package, we will take care of the rest."
+    }
+
+    ];
 
   return (
     <AnimationRevealPage>
       <Hero />
       <Features
-        subheading={<Subheading>Features</Subheading>}
-        heading={
-          <>
-            We have Amazing <HighlightedText>Service.</HighlightedText>
-          </>
-        }
-      />
-      <MainFeature
-        subheading={<Subheading>Quality Work</Subheading>}
-        imageSrc={heroScreenshotImageSrc}
-        imageBorder={true}
-        imageDecoratorBlob={true}
-      />
-      <FeatureWithSteps
-        subheading={<Subheading>STEPS</Subheading>}
-        heading={
-          <>
-            Easy to <HighlightedText>Get Started.</HighlightedText>
-          </>
-        }
-        textOnLeft={false}
-        imageSrc={macHeroScreenshotImageSrc}
-        imageDecoratorBlob={true}
-        decoratorBlobCss={tw`xl:w-40 xl:h-40 opacity-15 -translate-x-1/2 left-1/2`}
-      />
-      <MainFeature2
-        subheading={<Subheading>VALUES</Subheading>}
-        heading={
-          <>
-            We Always Abide by Our <HighlightedText>Principles.</HighlightedText>
-          </>
-        }
-        imageSrc={prototypeIllustrationImageSrc}
-        showDecoratorBlob={false}
-        features={[
-          {
-            Icon: MoneyIcon,
-            title: "Affordable",
-            description: "We promise to offer you the best rate we can - at par with the industry standard.",
-            iconContainerCss: tw`bg-green-300 text-green-800`
-          },
-          {
-            Icon: BriefcaseIcon,
-            title: "Professionalism",
-            description: "We assure you that our templates are designed and created by professional designers.",
-            iconContainerCss: tw`bg-red-300 text-red-800`
+          heading={
+            <>
+              Amazing <HighlightedText>Services.</HighlightedText>
+            </>
           }
-        ]}
-      />
+          cards={[
+            {
+              imageSrc: shopIconImageSrc,
+              title: "Highly Targeted Ads",
+              description: "We give you an assortment of the best influencers for your business",
+              url: "https://google.com"
+            },
+            {
+              imageSrc: chefIconImageSrc,
+              title: "Micro Influencers over Celebrities",
+              description: "Smaller influencers are more likely to engage with your brand",
+              url: "https://timerse.com"
+            },
+            {
+              imageSrc: celebrationIconImageSrc,
+              title: "Instant Results",
+              description: "Our Dashboard gives  real-time analytics of your campaign. And you can stop anytime.",
+              url: "https://reddit.com"
+            }
+          ]}
+  
+          imageContainerCss={tw`p-2!`}
+          imageCss={tw`w-20! h-20!`}
+        />
+      <FeatureWithSteps
+          subheading={<Subheading>STEPS</Subheading>}
+          heading={
+            <>
+              Easy to <HighlightedText>Get Started. </HighlightedText>
+            </>
+          }
+          steps={defaultSteps}
+          textOnLeft={false}
+          imageSrc={macHeroScreenshotImageSrc}
+          imageDecoratorBlob={true}
+          decoratorBlobCss={tw`xl:w-40 xl:h-40 opacity-15 -translate-x-1/2 left-1/2`}
+        />
+     
       <Pricing
         subheading={<Subheading>Pricing</Subheading>}
         heading={
@@ -107,36 +122,6 @@ export default () => {
             duration: "Monthly",
             mainFeature: "For Large Companies",
             features: ["90 Templates", "27 Landing Pages", "37 Internal Pages", "Personal Assistance"]
-          }
-        ]}
-      />
-      <Testimonial
-        subheading={<Subheading>Testimonials</Subheading>}
-        heading={
-          <>
-            Our Clients <HighlightedText>Love Us.</HighlightedText>
-          </>
-        }
-        testimonials={[
-          {
-            stars: 5,
-            profileImageSrc:
-              "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3.25&w=512&h=512&q=80",
-            heading: "Amazing User Experience",
-            quote:
-              "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
-            customerName: "Charlotte Hale",
-            customerTitle: "Director, Delos Inc."
-          },
-          {
-            stars: 5,
-            profileImageSrc:
-              "https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=512&h=512&q=80",
-            heading: "Love the Developer Experience and Design Principles !",
-            quote:
-              "Sinor Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-            customerName: "Adam Cuppy",
-            customerTitle: "Founder, EventsNYC"
           }
         ]}
       />
@@ -180,7 +165,6 @@ export default () => {
           }
         ]}
       />
-      <GetStarted/>
       <Footer />
     </AnimationRevealPage>
   );
