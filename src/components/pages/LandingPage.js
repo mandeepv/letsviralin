@@ -132,36 +132,37 @@ export default () => {
             You have <HighlightedText>Questions ?</HighlightedText>
           </>
         }
+        
         faqs={[
           {
-            question: "Are all the templates easily customizable ?",
+            question: "What is influencer marketing?",
             answer:
-              "Yes, they all are. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+              "Influencer marketing is a type of marketing that involves partnering with social media influencers to promote your brand or product to their followers."
           },
           {
-            question: "How long do you usually support an standalone template for ?",
+            question: "How do I know which influencers to work with?",
             answer:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+              "Our platform uses data analytics and insights to help you identify the right influencers for your brand based on factors such as audience demographics, engagement rates, and past performance."
           },
           {
-            question: "What kind of payment methods do you accept ?",
+            question: "What are nano-influencers?",
             answer:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+              "Nano-influencers are social media users with a following of 1,000 to 10,000 followers. They are the most cost-effective influencers to work with and have a higher engagement rate than micro-influencers."
           },
           {
-            question: "Is there a subscribption service to get the latest templates ?",
+            question: "What is the cost of working with influencers?",
             answer:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+              "The cost of working with influencers can vary depending on factors such as their following size, engagement rates, and type of content. Focusing on nano-influencers provides our clients with a never before reached audience to sell to, with a higher conversion rate."
           },
           {
-            question: "Are the templates compatible with the React ?",
+            question: "Can I track the performance of my campaigns?",
             answer:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+              "Yes, our platform provides real-time analytics and reporting so you can track the performance of your campaigns and make data-driven decisions to optimize your results."
           },
           {
-            question: "Do you really support Internet Explorer 11 ?",
+            question: "How do I get started with influencer marketing?",
             answer:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+              "Simply sign up for our platform, create a campaign brief outlining your objectives and target audience, and we'll help you connect with the right influencers to achieve your goals."
           }
         ]}
       />
