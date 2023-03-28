@@ -95,6 +95,7 @@ export default () => {
      
      <Pricing
         subheading={<Subheading>Pricing</Subheading>}
+        description=""
         heading={
           <>
             Reasonable & Flexible <HighlightedText>Plans.</HighlightedText>
