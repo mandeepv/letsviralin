@@ -40,7 +40,7 @@ export default () => {
       description: "Choose a package that suits your needs."
     },
     {
-        heading: "Watch NIX make you go viral",
+        heading: "Watch Letsviral.in make you go viral",
         description: "Once you have selected a package, we will take care of the rest."
     }
 
