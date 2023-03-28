@@ -93,7 +93,7 @@ export default () => {
           decoratorBlobCss={tw`xl:w-40 xl:h-40 opacity-15 -translate-x-1/2 left-1/2`}
         />
      
-      <Pricing
+     <Pricing
         subheading={<Subheading>Pricing</Subheading>}
         heading={
           <>
@@ -102,26 +102,28 @@ export default () => {
         }
         plans={[
           {
-            name: "Personal",
-            price: "$17.99",
-            duration: "Monthly",
-            mainFeature: "For Individuals",
-            features: ["30 Templates", "7 Landing Pages", "12 Internal Pages", "Basic Assistance"]
+            name: "Personal Campaign",
+            price: "₹999",
+            duration: "",
+            mainFeature: "Suited for Personal Blogs",
+            features: ["10 Nano-Influencers", "5000 views"],
+            featured: true,
           },
           {
             name: "Business",
-            price: "$37.99",
-            duration: "Monthly",
-            mainFeature: "For Small Businesses",
-            features: ["60 Templates", "15 Landing Pages", "22 Internal Pages", "Priority Assistance"],
-            featured: true
+            price: "₹4,999",
+            duration: "",
+            mainFeature: "Suited for Small Businesses",
+            features: ["60 Nano-Influencers", "30,000 views"],
+            featured: true,
           },
           {
             name: "Enterprise",
-            price: "$57.99",
-            duration: "Monthly",
-            mainFeature: "For Large Companies",
-            features: ["90 Templates", "27 Landing Pages", "37 Internal Pages", "Personal Assistance"]
+            price: "₹9,999",
+            duration: "",
+            mainFeature: "Suited for Big Companies",
+            features: ["90 Nano-Influencers", "50,000 views"],
+            featured: true,
           }
         ]}
       />
