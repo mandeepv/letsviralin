@@ -53,9 +53,10 @@ export default () => {
       <Content>
         <ThreeColRow>
           <LogoContainer>
-            <LogoText>Letsviral.in</LogoText>
+            <LogoText>letsviral.in</LogoText>
           </LogoContainer>
-          <CopywrightNotice>&copy; 2023 Letsviral Inc. All Rights Reserved.</CopywrightNotice>
+          <CopywrightNotice>Contact: team@letsviral.in</CopywrightNotice>
+
         </ThreeColRow>
       </Content>
       <DecoratorBlobContainer>

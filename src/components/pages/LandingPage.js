@@ -28,19 +28,19 @@ export default () => {
 
   const defaultSteps = [
     {
-      heading: "Signup",
-      description: "Create an account with us using your email ID."
+      heading: "Register",
+      description: "Input your business' details to get started."
     },
     {
-      heading: "Input Details",
-      description: "Input various details about your business."
+      heading: "Contact",
+      description: "Our team will reach out to you to understand your needs better."
     },
     {
       heading: "Select Influencer Package",
-      description: "Choose a package that suits your needs."
+      description: "Choose a nano-influencer package that suits your needs."
     },
     {
-        heading: "Watch Letsviral.in make you go viral",
+        heading: "Watch letsviral.in make you go viral",
         description: "Once you have selected a package, we will take care of the rest."
     }
 
@@ -59,13 +59,13 @@ export default () => {
             {
               imageSrc: shopIconImageSrc,
               title: "Highly Targeted Ads",
-              description: "We give you an assortment of the best influencers for your business",
+              description: "We give you the best assortment of nano-influencers for your business' needs, based on geography, demographics, and interests.",
               url: "https://google.com"
             },
             {
               imageSrc: chefIconImageSrc,
-              title: "Micro Influencers over Celebrities",
-              description: "Smaller influencers are more likely to engage with your brand",
+              title: "Nano Influencers over Celebrities",
+              description: "Smaller influencers have consistently shown to better increase engagement for your brand compared to traditional marketing methods.",
               url: "https://timerse.com"
             },
             {
@@ -106,7 +106,7 @@ export default () => {
             name: "Personal Campaign",
             price: "₹999",
             duration: "",
-            mainFeature: "Suited for Personal Blogs",
+            mainFeature: "For Personal Blogs",
             features: ["10 Nano-Influencers", "5000 views"],
             featured: true,
           },
@@ -114,7 +114,7 @@ export default () => {
             name: "Business",
             price: "₹4,999",
             duration: "",
-            mainFeature: "Suited for Small Businesses",
+            mainFeature: "For Small Businesses",
             features: ["60 Nano-Influencers", "30,000 views"],
             featured: true,
           },
@@ -122,7 +122,7 @@ export default () => {
             name: "Enterprise",
             price: "₹9,999",
             duration: "",
-            mainFeature: "Suited for Big Companies",
+            mainFeature: "For Big Companies",
             features: ["90 Nano-Influencers", "50,000 views"],
             featured: true,
           }
