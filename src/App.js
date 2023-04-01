@@ -14,7 +14,7 @@ function App() {
     <Router>
       <AnimationRevealPage>
         <Routes>
-
+          <Route path="/" element={<LandingPage />} />
           <Route path="business/login" element={<SignInPage />} />
           <Route path="/contact" element={<SimpleContactUs />} />
           <Route path="/success" element={<SuccessPage />} />
