@@ -87,6 +87,7 @@ export default ({ cards = null, heading = "Amazing Features", subheading = "Feat
       <ThreeColumnContainer>
         {subheading && <Subheading>{subheading}</Subheading>}
         <Heading>{heading}</Heading>
+        {description && <Description>{description}</Description>}
         <VerticalSpacer />
         {cards.map((card, i) => (
           <Column key={i}>
@@ -97,7 +98,7 @@ export default ({ cards = null, heading = "Amazing Features", subheading = "Feat
               <span className="textContainer">
                 <span className="title">{card.title || "Fully Secure"}</span>
                 <p className="description">
-                  {card.description || ""}
+                  {card.description || "Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis nostrud."}
                 </p>
               </span>
             </Card>

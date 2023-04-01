@@ -3,22 +3,13 @@ import styled from "styled-components";
 import tw from "twin.macro";
 //eslint-disable-next-line
 import { css } from "styled-components/macro";
-import Popup from 'reactjs-popup';
-import 'reactjs-popup/dist/index.css';
 
 import Header from "../headers/light.js";
 
 import { ReactComponent as SvgDecoratorBlob1 } from "../../images/svg-decorator-blob-1.svg";
 import DesignIllustration from "../../images/design-illustration-2.svg";
 import CustomersLogoStripImage from "../../images/customers-logo-strip.png";
-import Form from "../forms/SimpleContactUs.js";
-import { useNavigate } from 'react-router-dom';
-import { useState } from "react";
 
-function TwoColumnWithInput({roundedHeaderButton = false})  {
-
-const [email, setEmail] = useState('');
-const navigate = useNavigate();
 const Container = tw.div`relative`;
 const TwoColumn = tw.div`flex flex-col lg:flex-row lg:items-center max-w-screen-xl mx-auto py-20 md:py-24`;
 const LeftColumn = tw.div`relative lg:w-5/12 text-center max-w-lg mx-auto lg:max-w-none lg:text-left`;
@@ -35,7 +26,6 @@ const Actions = styled.div`
   button {
     ${tw`w-full sm:absolute right-0 top-0 bottom-0 bg-primary-500 text-gray-100 font-bold mr-2 my-4 sm:my-2 rounded-full py-4 flex items-center justify-center sm:w-40 sm:leading-none focus:outline-none hover:bg-primary-900 transition duration-300`}
   }
-
 `;
 
 const IllustrationContainer = tw.div`flex justify-center lg:justify-end items-center`;
@@ -55,19 +45,7 @@ const CustomersLogoStrip = styled.div`
   }
 `;
 
-
-const handleEmailInputChange = (event) => {
-  setEmail(event.target.value);
-};
-
-const handleGetStartedButtonClick = () => {
-  navigate('/contact', { state: { email: email } });
-};
-
-
-
-
-
+export default ({ roundedHeaderButton }) => {
   return (
     <>
       <Header roundedHeaderButton={roundedHeaderButton} />
@@ -75,16 +53,20 @@ const handleGetStartedButtonClick = () => {
         <TwoColumn>
           <LeftColumn>
             <Heading>
-              Influencer Marketing Made easy <span tw="text-primary-500">for you.</span>
+              Beautiful React Templates <span tw="text-primary-500">for you.</span>
             </Heading>
             <Paragraph>
-              Campaigns are easy to create, manage and track. Everything you need from the comfort of a single screen
+              Our templates are easy to setup, understand and customize. Fully modular components with a variety of
+              pages and components.
             </Paragraph>
             <Actions>
-              
-            <input type="text" placeholder="Your Name" value={email} onChange={handleEmailInputChange} autoFocus/>
-              <button className="button" onClick={handleGetStartedButtonClick}> Get Started</button>
+              <input type="text" placeholder="Your E-mail Address" />
+              <button>Get Started</button>
             </Actions>
+            <CustomersLogoStrip>
+              <p>Our TRUSTED Customers</p>
+              <img src={CustomersLogoStripImage} alt="Our Customers" />
+            </CustomersLogoStrip>
           </LeftColumn>
           <RightColumn>
             <IllustrationContainer>
@@ -96,6 +78,4 @@ const handleGetStartedButtonClick = () => {
       </Container>
     </>
   );
-}
-
-export default TwoColumnWithInput;
+};

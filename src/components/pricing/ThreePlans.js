@@ -85,7 +85,7 @@ const DecoratorBlob = styled(SvgDecoratorBlob)`
 export default ({
   subheading = "Pricing",
   heading = "Flexible Plans.",
-  description = "",
+  description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   plans = null,
   primaryButtonText = "Buy Now"
 }) => {
@@ -96,7 +96,6 @@ export default ({
       duration: "Monthly",
       mainFeature: "Suited for Personal Blogs",
       features: ["30 Templates", "7 Landing Pages", "12 Internal Pages", "Basic Assistance"],
-      featured: true,
     },
     {
       name: "Business",
@@ -112,7 +111,6 @@ export default ({
       duration: "Monthly",
       mainFeature: "Suited for Big Companies",
       features: ["90 Templates", "9 Landing Pages", "37 Internal Pages", "Personal Assistance"],
-      featured: true,
     },
   ];
 
@@ -158,6 +156,9 @@ export default ({
                   </span>
                 ))}
               </PlanFeatures>
+              <PlanAction>
+                <BuyNowButton css={!plan.featured && highlightGradientsCss[index]}>{primaryButtonText}</BuyNowButton>
+              </PlanAction>
             </Plan>
           ))}
           <DecoratorBlob/>
